@@ -12,12 +12,12 @@ $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->SMTPAuth = true;
 
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'smtp.gmail.com';  //Eigene Email Host eingeben
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
-$mail->Username = 'khalid.elmarouani@gmail.com';
-$mail->Password = 'gmup anrg ense sgsg';
+$mail->Username = 'Sender Email eingeben';
+$mail->Password = 'App Password eingeben';
 
 $mail->isHTML(true);
 
