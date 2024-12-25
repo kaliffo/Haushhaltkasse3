@@ -2,8 +2,8 @@
 
 
 
-$dsn ="mysql:host=localhost;dbname=hashaltKasse";
-$dbusername = "root";
+$dsn ="mysql:host=localhost;dbname=****";
+$dbusername = "****";
 $dbpassword = "";
 
 try{
