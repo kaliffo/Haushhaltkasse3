@@ -1,0 +1,353 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Vollständige Höhe des Viewports */
+  }
+.content {
+
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    
+}
+.contentuebersicht{
+    flex: 1; /* Allow the main section to grow and take available space */
+    overflow-y: auto; /* Enable vertical scrollbar when content overflows */
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin-top: 130px;
+    margin-bottom: 0;
+    background-image: url('../image/sparen.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+header {
+    background-color: #2C3E50;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 130px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure the header is above other elements */
+    padding: 10px; /* Add padding for better spacing */
+
+}
+header h1 {
+    margin: 0;
+    font-size: 4rem; /* Macht den Titel größer */
+    font-weight: bold; /* Optional: Macht den Text fett */
+}
+
+
+header img{
+    height: 90px;
+    position: absolute; /* Take the logo out of the flex layout */
+    left: 10px; /* Position the logo on the left */
+    
+}
+
+
+footer {
+    background-color: #2C3E50;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    text-align: center;
+    z-index: 1000;
+}
+main {
+    display: flex;
+    flex-direction: column; 
+   /*min-height: calc(100vh - 210px);*/
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 130px;
+    bottom: 80px;
+}
+.anmeldreg {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Hintergrundfarbe */
+    font-family: Arial, sans-serif;
+    background-image: url('../image/sparen.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.anmeld {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Hintergrundfarbe */
+    font-family: Arial, sans-serif;
+    background-image: url('../image/sparen.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.anmeldung {
+    background-color: #75899c;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 80px ;
+    margin-right: 20px;
+    margin-left: 1200px;
+
+}
+
+.registrierung {
+    display:flex;
+    flex-direction: column;
+    background-color: #75899c;
+    padding: 60px 80px ;
+    margin-left: 1400px;
+}
+.control {
+    background-color: #0092b3;
+    padding: 10px;
+    text-align: top;
+    position: fixed;
+    top: 130px; /* Direkt unter dem Header */
+    width: 100%;
+    z-index: 999;
+    margin-left: 150px;
+}
+
+.manipulieren {
+    background-color: #0092b3;
+    display: inline;
+    padding: 10px;
+    text-align: top;
+    position: fixed;
+    top: 130px; /* Direkt unter dem Header */
+    width: 100%;
+    z-index: 999;
+    margin-left: 150px;
+    height: 150px;
+}
+.blockelement {
+    display: inline;
+  }
+.manipulieren form input {
+        width:auto;
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 5px;
+      }
+
+ 
+.maincontent {
+    display: flex;
+    flex :1;
+    flex-direction: column;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-image: url('../image/sparen.jpg');
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: #2C3E50;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 150px;
+    
+}
+.maincontent h1,p {
+    color: aqua;
+}
+
+.title {
+    justify-content: right;
+    align-items: left;
+    width: 100%;
+
+}
+.inUndout {
+    display: flex;
+    height: 40%;
+}
+.inUndout h3{
+    align-items: center;
+    justify-content: center;
+}
+
+.bilanz {
+    background-color:aqua;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    
+    
+}
+
+
+.einnahmen {
+    background-color: rgb(105, 155, 105);
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.ausgaben {
+    background-color: rgb(144, 85, 85);
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.anmeldreg h2{
+    
+    font-size: 2em;
+    color: #0056b3;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Abstand zwischen den Links */
+  }
+  .list {
+    display: flex;
+    flex-direction: column; /* Vertikale Liste */
+    gap: 15px; /* Abstand zwischen den Listenelementen */
+    padding: 0;
+    list-style: none;
+  }
+  .list li {
+    background-color: #667b90;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+  
+  .link {
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-size: 1.2rem; /* Schriftgröße */
+    color: rgb(14, 32, 32);
+    font-weight: bold;
+  }
+  
+  .link:hover {
+    text-decoration: underline; /* Unterstreicht beim Hover */
+    color:aqua; 
+  }
+nav {
+    background-color: #75899c;
+    left: 0px;
+    padding: 10px;
+    text-align: left;
+    position: fixed;
+    top: 130px; /* Direkt unter dem Header */
+    width: 150px;
+    bottom: 80px;
+    z-index: 999;
+}
+
+
+button {
+    background-color: #2C3E50; /* Türkis */
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: aqua; 
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 30px;
+    text-align: center;
+}
+th {
+    /*background-color: #2C3E50;*/
+    background-color: white;
+}
+td {
+    /*background-color: #465a6f;*/
+    background-color: white;
+}
+.manform :disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #555;
+}
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
